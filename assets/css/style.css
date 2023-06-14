@@ -1,0 +1,145 @@
+@import url(./variables.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark);
+  font-family: "Archivo";
+  color: var(--font-color);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  background: var(--gray);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+nav ul li {
+  display: flex;
+  gap: 2rem;
+}
+
+a i {
+  font-size: 1.3rem;
+}
+
+/* Section Home*/
+
+.container {
+  padding: 7rem 10rem;
+}
+
+.home {
+  display: flex;
+  gap: 5rem;
+}
+
+.content-home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.content-home h1 {
+  color: var(--white);
+}
+
+.content-home h2 {
+  color: var(--primary-color);
+}
+
+.img-home img {
+  width: 80%;
+  border-radius: 7px;
+}
+
+/* Section About*/
+
+.content-about {
+  display: flex;
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.graduation h2 {
+  color: var(--primary-color);
+}
+
+.graduation {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Section Projetos*/
+
+.projetos p {
+  color: var(--font-color);
+}
+
+.grid-projetos {
+  display: flex;
+  text-align: center;
+  padding-top: 9rem;
+  gap: 8rem;
+  justify-content: space-between;
+}
+
+.grid-projetos img {
+  width: 70%;
+  border-radius: 4px;
+}
+
+.projetos h4,
+.projetos h2 {
+  color: var(--primary-color);
+}
+
+.projetos h3 {
+  color: var(--white);
+}
+
+.button {
+  color: var(--white);
+  background: var(--secundary-color);
+  padding: 7px 15px;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Section Tecnologias*/
