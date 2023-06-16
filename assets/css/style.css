@@ -90,15 +90,28 @@ a i {
 }
 
 .graduation h2 {
-  color: var(--primary-color);
+  color: var(--white);
 }
 
-.graduation {
+.graduation ul {
   display: flex;
+  padding-top: 1rem;
   flex-direction: column;
   gap: 2rem;
 }
 
+.graduation ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+.graduation li span {
+  color: var(--primary-color);
+}
 /* Section Projetos*/
 
 .projetos p {
@@ -113,17 +126,17 @@ a i {
   justify-content: space-between;
 }
 
-.grid-projetos img {
-  width: 70%;
+.grid-projetos video {
+  width: 80%;
   border-radius: 4px;
 }
 
-.projetos h4,
-.projetos h2 {
+.projetos h4 {
   color: var(--primary-color);
 }
 
-.projetos h3 {
+.projetos h3,
+.projetos h2 {
   color: var(--white);
 }
 
@@ -143,3 +156,36 @@ a i {
 }
 
 /* Section Tecnologias*/
+
+.content-tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.content-tecnologias h2 {
+  color: var(--white);
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tecnologias h4 {
+  text-transform: uppercase;
+}
+
+.bar {
+  background: var(--primary-color);
+  width: 50%;
+  height: 1rem;
+  border-radius: 10px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
