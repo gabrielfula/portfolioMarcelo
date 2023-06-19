@@ -16,6 +16,7 @@ nav {
   width: 100%;
   display: flex;
   padding: 1rem;
+  height: 7vh;
   position: absolute;
   text-align: center;
   align-items: center;
@@ -26,6 +27,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 5rem;
   width: 100%;
@@ -41,9 +43,9 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
-nav ul li {
+nav ul .icons {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 a i {
@@ -124,12 +126,13 @@ li {
 .grid-projetos {
   display: flex;
   text-align: center;
+  align-items: center;
   padding-top: 9rem;
   gap: 8rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.grid-projetos video {
+video {
   width: 80%;
   border-radius: 4px;
 }
@@ -156,6 +159,11 @@ li {
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /* Section Tecnologias*/
