@@ -87,6 +87,9 @@ a i {
   /* justify-content: space-around; */
   justify-content: space-between;
   gap: 5rem;
+  background: var(--gray);
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 .graduation h2 {
@@ -161,6 +164,9 @@ li {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  background: var(--gray);
+  padding: 2rem;
+  border-radius: 5px;
 }
 
 .content-tecnologias h2 {
@@ -188,4 +194,18 @@ li {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+.bar-bootstrap {
+  background: var(--primary-color);
+  width: 35%;
+  height: 1rem;
+  border-radius: 10px;
+}
+
+.bar-css {
+  background: var(--primary-color);
+  width: 30%;
+  height: 1rem;
+  border-radius: 10px;
 }
