@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   gap: 4px;
+  cursor: pointer;
 }
 
 .hamburguer {
@@ -23,7 +24,7 @@
     padding: 0 0 0 1rem;
   }
 
-  nav ul {
+  nav .active {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -37,7 +38,7 @@
     align-items: flex-start;
   }
 
-  nav ul li {
+  nav .menu li {
     display: flex;
     justify-content: flex-start;
     border: 1px solid var(--white);
@@ -48,7 +49,7 @@
     align-items: center;
   }
 
-  nav ul li a {
+  nav .menu li a {
     padding-left: 1rem;
   }
 }
