@@ -24,18 +24,21 @@
     padding: 0 0 0 1rem;
   }
 
-  nav .active {
-    display: none;
+  /* .menu .active {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  nav .menu {
+    display: block;
     flex-direction: column;
     position: absolute;
-    top: 5vh;
+    top: 7vh;
     padding: 1rem;
-    background: var(--gray);
-    width: 100vw;
+    z-index: 1000;
+    left: 0;
+    background-color: var(--gray);
     height: auto;
-    justify-content: start;
-    gap: 1rem;
-    align-items: flex-start;
   }
 
   nav .menu li {
