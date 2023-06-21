@@ -2,6 +2,8 @@
 
 .mobile-responsive {
   display: none;
+  background: none;
+  border: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -24,28 +26,31 @@
     padding: 0 0 0 1rem;
   }
 
-  /* .menu .active {
-    display: flex;
-    flex-direction: column;
-  } */
-
   nav .menu {
-    display: block;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 7vh;
+    height: 0px;
+    align-items: center;
     padding: 1rem;
     z-index: 1000;
     left: 0;
+    transition: all 3s;
     background-color: var(--gray);
+  }
+
+  nav .menu.activate {
     height: auto;
+    display: block;
   }
 
   nav .menu li {
     display: flex;
     justify-content: flex-start;
-    border: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
     width: 100%;
+    padding: 10px 0 10px 0;
     height: 2rem;
     border-radius: 3px;
     text-align: center;
